@@ -17,8 +17,7 @@ $(window).scroll(()=>{
         $("html").removeClass("scroll");
     }
 })
-
-comsole.log(typeof $(window).scrollTop(), $(window).scrollTop())
+console.log(typeof $(window).scrollTop(), $(window).scrollTop())
 
 // 제이쿼리 간단한 문법
 // 1. $("스타일 선택자와 동일")
