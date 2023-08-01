@@ -11,7 +11,11 @@
     border: 1px solid #f1f1f1;
     max-width: 600px;
     max-height: 600px;
+    /* width: calc(100vw - 30px); */
     display: none;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 3px 3px 3px rgba(0,0,0,.3);
 }
 
 /* 원래는 display:none 이라 안보이는데 부모 클래스 .popupshow 적용되면 나타난다*/
@@ -24,4 +28,9 @@
     position: fixed;
     left: 0; top: 0; right: 0; bottom: 0;
     background-color: rgba(0,0,0,0.6);
+}
+
+/* 팝업 노출되었을때는 body 스크롤 안되게 처리 */
+.popupshow{
+    overflow-y: hidden;
 }
